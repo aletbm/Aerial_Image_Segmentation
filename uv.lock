@@ -17,6 +17,51 @@ wheels = [
 ]
 
 [[package]]
+name = "aerial-image-segmentation"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "gdown" },
+    { name = "image-classifiers" },
+    { name = "ipykernel" },
+    { name = "ipywidgets" },
+    { name = "kaggle" },
+    { name = "kagglehub" },
+    { name = "kagglesdk" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "nvidia-cuda-nvrtc-cu11" },
+    { name = "opencv-python" },
+    { name = "pandas" },
+    { name = "pillow" },
+    { name = "pymupdf" },
+    { name = "python-dotenv" },
+    { name = "seaborn" },
+    { name = "tensorflow", extra = ["and-cuda"] },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "gdown", specifier = ">=6.1.0" },
+    { name = "image-classifiers", specifier = ">=1.0.0" },
+    { name = "ipykernel", specifier = ">=7.3.0" },
+    { name = "ipywidgets", specifier = ">=8.1.9" },
+    { name = "kaggle", specifier = "<2.2.4" },
+    { name = "kagglehub", specifier = ">=1.0.2" },
+    { name = "kagglesdk", specifier = "==0.1.28" },
+    { name = "matplotlib", specifier = ">=3.8,<3.11.1" },
+    { name = "numpy", specifier = "==1.26.4" },
+    { name = "nvidia-cuda-nvrtc-cu11", specifier = ">=11.8.89" },
+    { name = "opencv-python", specifier = ">=4.11.0.86" },
+    { name = "pandas", specifier = ">=2.3.3" },
+    { name = "pillow", specifier = ">=12.3.0" },
+    { name = "pymupdf", specifier = ">=1.28.2" },
+    { name = "python-dotenv", specifier = ">=1.2.3" },
+    { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "tensorflow", extras = ["and-cuda"], specifier = "==2.14.0" },
+]
+
+[[package]]
 name = "appnope"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -284,51 +329,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/6d/30/03b03951873a1a0ffc7e8ca0e10c15597b59e8d0e39260704cd2ea087bc4/filelock-3.32.4.tar.gz", hash = "sha256:2bde2e4cf732e0153406d8a7bc80620ecf5e621fe0d25e41143c4e3b4733ff30", size = 222126, upload-time = "2026-08-23T17:37:55.363Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/01/a4/9b63d595d748e3aff8812b65eacc1a2c4bd90b7c2012e08e72373b4835eb/filelock-3.32.4-py3-none-any.whl", hash = "sha256:22e58ca3b1ae3b98993b762d7338367ae64fe50252bf78d59da3bfebcdf1cedd", size = 99864, upload-time = "2026-08-23T17:37:53.913Z" },
-]
-
-[[package]]
-name = "final"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "gdown" },
-    { name = "image-classifiers" },
-    { name = "ipykernel" },
-    { name = "ipywidgets" },
-    { name = "kaggle" },
-    { name = "kagglehub" },
-    { name = "kagglesdk" },
-    { name = "matplotlib" },
-    { name = "numpy" },
-    { name = "nvidia-cuda-nvrtc-cu11" },
-    { name = "opencv-python" },
-    { name = "pandas" },
-    { name = "pillow" },
-    { name = "pymupdf" },
-    { name = "python-dotenv" },
-    { name = "seaborn" },
-    { name = "tensorflow", extra = ["and-cuda"] },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "gdown", specifier = ">=6.1.0" },
-    { name = "image-classifiers", specifier = ">=1.0.0" },
-    { name = "ipykernel", specifier = ">=7.3.0" },
-    { name = "ipywidgets", specifier = ">=8.1.9" },
-    { name = "kaggle", specifier = "<2.2.4" },
-    { name = "kagglehub", specifier = ">=1.0.2" },
-    { name = "kagglesdk", specifier = "==0.1.28" },
-    { name = "matplotlib", specifier = ">=3.8,<3.11.1" },
-    { name = "numpy", specifier = "==1.26.4" },
-    { name = "nvidia-cuda-nvrtc-cu11", specifier = ">=11.8.89" },
-    { name = "opencv-python", specifier = ">=4.11.0.86" },
-    { name = "pandas", specifier = ">=2.3.3" },
-    { name = "pillow", specifier = ">=12.3.0" },
-    { name = "pymupdf", specifier = ">=1.28.2" },
-    { name = "python-dotenv", specifier = ">=1.2.3" },
-    { name = "seaborn", specifier = ">=0.13.2" },
-    { name = "tensorflow", extras = ["and-cuda"], specifier = "==2.14.0" },
 ]
 
 [[package]]
